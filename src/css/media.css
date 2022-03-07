@@ -1,0 +1,82 @@
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        width: 750px;
+    }
+
+    .header-btn {
+        margin-right: 215px;
+    }
+
+    .menage-img {
+        width: 870px;
+    }
+
+    .menage-play {
+        margin-top: -430px;
+    }
+
+    .control-item {
+        width: 166px;
+    }
+
+    .pay-img {
+        margin-left: -140px;
+        width: 545px;
+    }
+
+    .pay-img1 {
+        width: 315px;
+    }
+
+    .pay-img2 {
+        width: 116px;
+        margin-right: 176px;
+    }
+
+    .sell-item1 {
+        width: 283px;
+    }
+
+    .cost-content3 {
+        width: 236px;
+
+    }
+
+    .customers {
+    }
+
+    .blog {
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 650px;
+    }
+    .col-6{
+        width: 100%;
+    }
+    .cost{
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
