@@ -11,7 +11,9 @@ body {
 a {
     text-decoration: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -94,29 +96,34 @@ a {
 
 /*hero*/
 
+
 .hero {
     margin-bottom: 238px;
 }
-.hero-item2{
+
+.hero-item2 {
     position: relative;
     margin-left: 115px;
     margin-top: -75px;
 }
-.hero-img{
+
+.hero-img {
     position: absolute;
 }
-.hero-img1{
+
+.hero-img1 {
     position: absolute;
     margin-left: -263px;
     z-index: -1;
 }
-.hero-img2{
+.hero-img2 {
     position: absolute;
     margin-top: -62px;
     margin-left: 260px;
     z-index: -1;
 }
-.hero-img3{
+
+.hero-img3 {
     position: absolute;
     margin-top: 287px;
     margin-left: 185px;
@@ -129,12 +136,11 @@ a {
 
 .hero-btn1 {
     Width: 183px;
+    outline: none;
     Height: 22px;
     border-radius: 300px;
     background-color: #8979E8;
     color: white;
-    border: none;
-
 }
 
 
@@ -182,12 +188,6 @@ a {
 /*hero*/
 
 
-
-
-
-
-
-
 /*menage*/
 .menage {
     background-color: #F3F1FC;
@@ -207,12 +207,17 @@ a {
     margin-top: 345px;
     margin-left: -75px;
     position: absolute;
-    top: 5%;
+    top: 10%;
     transform: translate(855%, 1133%);
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menage-play:hover {
+    background-color: #9a1488;
+    transition: .4s;
 }
 
 .menage-img {
@@ -297,10 +302,12 @@ a {
     top: 89px;
     right: -25px;
 }
-.pay-block{
+
+.pay-block {
     animation: backInRight;
     animation-duration: 2s;
 }
+
 .pay-btn {
     width: 211px;
     height: 22px;
@@ -331,10 +338,12 @@ a {
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.sell-img{
+
+.sell-img {
     animation: backInLeft;
     animation-duration: 2s;
 }
+
 .sell-item1 {
     margin-left: 100px;
 }
@@ -371,7 +380,7 @@ a {
 .customers {
     padding: 76px 0 103px;
     background-color: #F7F3EB;
-    height: 100vh;
+    height: 115vh;
 }
 
 .customers-title {
@@ -385,6 +394,18 @@ a {
     margin-bottom: 15px;
 }
 
+.customers-content1 {
+    width: 610px;
+    height: 170px;
+    background-color: #fff;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 33px 0 25px;
+    position: absolute;
+    transform: translate(240px, 10px);
+}
+
 .customers-content {
     width: 610px;
     height: 170px;
@@ -395,8 +416,10 @@ a {
     padding: 33px 0 25px;
     position: absolute;
     transform: translate(240px, 10px);
-
-
+    margin-top: 265px;
+}
+.customers-col{
+    width: 100%;
 }
 
 .customers-title2 {
@@ -428,6 +451,7 @@ a {
     padding: 33px 0 25px;
     position: absolute;
     margin-left: 48px;
+
 }
 
 .cost-content2 {
@@ -439,6 +463,7 @@ a {
     text-align: center;
     padding: 33px 0 25px;
     position: absolute;
+
 }
 
 .cost-content3 {
@@ -451,6 +476,7 @@ a {
     padding: 33px 0 25px;
     position: absolute;
     margin-left: -48px;
+
 }
 
 .cost-title {
@@ -478,11 +504,13 @@ a {
     margin-bottom: 35px;
     border: none;
 }
-.cost-btn:hover{
+
+.cost-btn:hover {
     color: #8979E8;
     background: #F7F3EB;
     transition: .6s;
 }
+
 /*cost*/
 
 
@@ -504,11 +532,13 @@ a {
     text-align: center;
     margin-bottom: 43px;
 }
-.start-item{
+
+.start-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .start-img {
     width: 70px;
     height: 70px;
@@ -597,106 +627,117 @@ a {
 }
 
 
-.popup-bg{
-     position: fixed;
-     top:0;
-     left:0;
-     width:100%;
-     height: 100vh;
-     background: rgba(0,0,0,0.5);
-     opacity: 0;
-     pointer-events: none;
-     transition: 0.5s all;
-     z-index: 2;
- }
-.popup-bg.active{
-                 opacity: 1;
-                 pointer-events: all;
-                 transition: 0.5s all;
-             }
+.popup-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+    z-index: 2;
+}
+
+.popup-bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
 .popup {
     position: absolute;
-    top:50%;
-    left:50%;
-    width:400px;
-    transform: translate(-50%,-50%) scale(0);
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    transform: translate(-50%, -50%) scale(0);
     background: #fff;
     padding: 25px;
     transition: 0.5s all;
 }
-.popup.active{
-    transform: translate(-50%,-50%) scale(1);
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
     transition: 0.5s all;
 }
-.close-popup{
+
+.close-popup {
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.close-popup2{
+
+.close-popup2 {
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.popup label{
-    width:100%;
-    margin-bottom:25px;
-    display:flex;
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
     flex-direction: column;
 }
+
 .popup .label__text {
-    font-size:14px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
-    color:#cfd0d3;
+    color: #cfd0d3;
     margin-bottom: 5px;
 }
-.popup input{
+
+.popup input {
     height: 45px;
     font-size: 18px;
-    border:none;
+    border: none;
     outline: none;
     border-bottom: 1px solid #cfd0d3;
 }
+
 .popup input:focus {
     border-bottom: 1px solid #2982ff;
 }
 
-.popup input:focus + .label__text{
-    color:#2982ff;
+.popup input:focus + .label__text {
+    color: #2982ff;
 }
-.popup textarea{
-    resize:none;
+
+.popup textarea {
+    resize: none;
     width: 100%;
     height: 150px;
     border: none;
-    outline:none;
+    outline: none;
     border-bottom: 1px solid #cfd0d3;
 }
 
-.popup textarea:focus{
-    border-bottom:1px solid #2982ff;
+.popup textarea:focus {
+    border-bottom: 1px solid #2982ff;
 }
 
-.popup button{
+.popup button {
     width: 100%;
     height: 45px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color:#fff;
-    font-size:18px;
-    border:2px solid #391145;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #391145;
     background: #391145;
-    cursor:pointer;
+    cursor: pointer;
     text-transform: uppercase;
     transition: 0.5s all;
 }
-.popup button:hover{
+
+.popup button:hover {
     background: #fff;
-    color:#391145;
+    color: #391145;
     transition: 0.5s all;
 }
 
@@ -731,6 +772,7 @@ a {
 }
 
 /*footer*/
+
 
 
 

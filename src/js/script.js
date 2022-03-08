@@ -50,8 +50,6 @@ document.addEventListener('click', (e )  => {
         popup.classList.remove('active');
     }
 });
-//
-
 
 
 
