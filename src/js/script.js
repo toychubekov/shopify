@@ -30,9 +30,8 @@ let openPopupButtons = document.querySelectorAll('.header-btn',);
 let closePopupButton = document.querySelector('.close-popup');
 
 
-
-openPopupButtons.forEach((button) =>{
-    button.addEventListener('click',(e )=>{
+openPopupButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
         e.preventDefault();
         popupBg.classList.add('active');
         popup.classList.add('active');
@@ -44,8 +43,8 @@ closePopupButton.addEventListener('click', () => {
     popup.classList.remove('active');
 });
 
-document.addEventListener('click', (e )  => {
-    if(e.target === popupBg) {
+document.addEventListener('click', (e) => {
+    if (e.target === popupBg) {
         popupBg.classList.remove('active');
         popup.classList.remove('active');
     }
@@ -53,6 +52,14 @@ document.addEventListener('click', (e )  => {
 
 
 
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > -1) {
+        $('.header').addClass('header-fixed')
+    } else {
+        $('.header').removeClass('header-fixed')
+    }
+});
 
 
 

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -11,9 +12,11 @@ body {
 a {
     text-decoration: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +42,24 @@ html{
     margin: 0 auto;
 }
 
+
+
 /*header*/
+.header-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-bottom: 86px;
+    z-index: 15;
+    transition: all .6s;
+}
+
+.header-fixed:before{
+    display: none;
+}
+
 .header {
     margin-top: 20px;
     margin-bottom: 86px;
@@ -99,6 +119,7 @@ html{
 
 .hero {
     margin-bottom: 238px;
+    margin-top: 130px;
 }
 
 .hero-item2 {
@@ -116,6 +137,7 @@ html{
     margin-left: -263px;
     z-index: -1;
 }
+
 .hero-img2 {
     position: absolute;
     margin-top: -62px;
@@ -403,7 +425,7 @@ html{
     text-align: center;
     padding: 33px 0 25px;
     position: absolute;
-    transform: translate(240px, 10px);
+    transform: translate(-55px, 10px);
 }
 
 .customers-content {
@@ -415,11 +437,11 @@ html{
     text-align: center;
     padding: 33px 0 25px;
     position: absolute;
-    transform: translate(240px, 10px);
-    margin-top: 265px;
+    transform: translate(5px, 10px);
 }
-.customers-col{
-    width: 100%;
+
+.customers-col {
+    width: 50%;
 }
 
 .customers-title2 {
@@ -772,9 +794,6 @@ html{
 }
 
 /*footer*/
-
-
-
 
 
 
